@@ -11,7 +11,7 @@ public class Bike extends Vehicle{
 
     // COSTRUTTORI
 
-    public Bike(String targa, int numeroImmatricolazione) {
+    public Bike(String targa, int numeroImmatricolazione, boolean cavalletto) {
         super(targa, numeroImmatricolazione);
         this.cavalletto = cavalletto;
     }

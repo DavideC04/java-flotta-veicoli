@@ -12,7 +12,7 @@ public class Car extends Vehicle {
     private int numeroPorte;
 
     // COSTRUTTORI
-    public Car(String targa, int numeroImmatricolazione) {
+    public Car(String targa, int numeroImmatricolazione, int numeroPorte) {
         super(targa, numeroImmatricolazione);
         this.numeroPorte = numeroPorte;
     }

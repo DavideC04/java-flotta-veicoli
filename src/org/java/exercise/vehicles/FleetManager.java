@@ -19,7 +19,7 @@ public class FleetManager {
     }
 
     // contare quanti veicoli ci sono di un determinato tipo (auto o moto)
-    public int typeVehicles(){
+    public int typeVehiclesCar(String type){
         // inizializzo un contatore uguale a 0
         int c = 0;
         for (Vehicle vehicle: vehicles) {
@@ -27,12 +27,18 @@ public class FleetManager {
             if (vehicle instanceof Car){
                 c++;
             }
-            // se il veicolo è una moto, aumenta il contatore
-            if (vehicle instanceof Bike){
-                c++;
-            }
         }
         return c;
+    }
+    public int typeVehicleBike(){
+        int b = 0;
+        for (Vehicle vehicle :vehicles) {
+            // se il veicolo è una moto, aumenta il contatore
+            if (vehicle instanceof Bike){
+                b++;
+            }
+        }
+        return b;
     }
         // metodo per trovare un veicolo tramite un numero di targa
     public Vehicle findVehicleByPlate(String targa){
