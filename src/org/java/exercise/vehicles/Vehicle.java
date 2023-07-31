@@ -21,6 +21,16 @@ public class Vehicle {
 
     // GETTER E SETTER
 
+    public String getTarga() {
+        return targa;
+    }
+
+    public int getNumeroImmatricolazione() {
+        return numeroImmatricolazione;
+    }
+
+
+
 
     // METODI
 
